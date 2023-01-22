@@ -1,0 +1,116 @@
+$bg: #0b0321;
+$main: #faff16;
+$border-radius: 10px;
+$bg-tone: #241c39;
+$text-gray: #8e8e8e;
+
+.authentication {
+  height: 38rem;
+  width: 63rem;
+
+  background-color: $bg;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  transform: skew(-2deg);
+
+  position: absolute;
+
+  img {
+    position: relative;
+    bottom: 4%;
+    height: 108%;
+  }
+
+  &__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    color: white;
+    .server-name {
+      font-size: 3.25rem;
+      font-weight: 600;
+      span {
+        color: $main;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .inputs {
+      margin: 1rem 0rem;
+      padding: 0rem 3rem;
+      width: 100%;
+
+      .input-login {
+        margin-bottom: 0.7rem;
+      }
+    }
+
+    .buttons {
+      width: 100%;
+      margin: 1rem 0rem;
+      padding: 0rem 3rem;
+
+      display: flex;
+
+      .button-login-to-register {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.input-all {
+  background-color: $bg-tone;
+  width: 100%;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: $text-gray;
+  border-radius: $border-radius;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.input-all:focus {
+  border: 1px solid $main;
+}
+
+.button-all {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  border-radius: $border-radius;
+  border: none;
+  outline: none;
+}
+
+.button-all-primary {
+  background-color: $main;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    background-color: #dfe306;
+  }
+}
+
+.button-all-secondary {
+  background-color: $bg-tone;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+
+  &:hover {
+    background-color: #31254e;
+  }
+}
